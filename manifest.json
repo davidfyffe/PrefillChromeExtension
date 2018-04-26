@@ -1,0 +1,21 @@
+{
+    "name": "PendulumPreFiller",
+    "version": "1.0",
+    "description": "Prefills your weekly hours",
+    "permissions": ["activeTab","declarativeContent","storage"],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+  "options_page": "options.html",
+  "page_action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "images/testic.png",
+    "32": "images/testic.png",
+    "48": "images/testic.png",
+    "128": "images/testic.png"
+  },
+    "manifest_version": 2
+}
