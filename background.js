@@ -1,10 +1,11 @@
 chrome.runtime.onInstalled.addListener(function() {
-    chrome.storage.sync.set({dailyHours: '7.5'}, function() {
-        console.log("DailyHours =" + 7.5);
+    chrome.storage.sync.set({dailyHours: { dailyHours: '7.5', office: 'Belfast'}}, function() {
+        console.log("DailyHours = " + 7.5);
+        console.log("Office = " + 'Belfast');
     });
 
     chrome.storage.sync.set({weeklyHours: '37.5'}, function() {
-        console.log("WeeklyHours =" + 37.5);
+        console.log("WeeklyHours = " + 37.5);
     });
 
     chrome.declarativeContent.onPageChanged.removeRules(undefined, function() {

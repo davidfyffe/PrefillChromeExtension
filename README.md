@@ -13,5 +13,5 @@
 1. Open chrome://extensions
 2. Select DETAILS
 3. Click on Extension Options. 
-4. Fill in your hours and weekly totals -> Save
+4. Fill in your hours, weekly totals and select your office location -> Save
 5. Browse back to website and your new values will be used.
