@@ -11,7 +11,7 @@ chrome.storage.sync.get('dailyHours', function(data) {
     monday.value = data.dailyHours.dailyHours;
     monday.dispatchEvent(event);
 
-    let tuethurs = data.dailyHours.office === 'Belfast' ? document.querySelectorAll('*[id^="Work Belfast.t"]') : document.querySelectorAll('*[id^="Work Dublin.t"]');
+    let tuethurs =  document.querySelectorAll('*[id^="Work ' + data.dailyHours.office + '.t"]');
     tuethurs.forEach(d => {
         d.value = data.dailyHours.dailyHours;
         d.dispatchEvent(event);

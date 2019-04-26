@@ -1,7 +1,7 @@
 chrome.runtime.onInstalled.addListener(function() {
-    chrome.storage.sync.set({dailyHours: { dailyHours: '7.5', office: 'Belfast'}}, function() {
+    chrome.storage.sync.set({dailyHours: { dailyHours: '7.5', office: 'UK'}}, function() {
         console.log("DailyHours = " + 7.5);
-        console.log("Office = " + 'Belfast');
+        console.log("Office = " + 'UK');
     });
 
     chrome.storage.sync.set({weeklyHours: '37.5'}, function() {
